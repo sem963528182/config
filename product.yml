@@ -1,0 +1,14 @@
+eureka:
+  client:
+    service-url: 
+      defaultZone: http://peer1:8761/eureka/,http://peer2:8762/eureka/
+      
+server:
+  port: 8080
+  
+spring: 
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+  application: 
+    name: product
