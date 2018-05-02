@@ -1,11 +1,6 @@
-eureka:
-  client:
-    service-url: 
-      defaultZone: http://peer1:8761/eureka/,http://peer2:8762/eureka/
-      
 server:
   port: 8080
-  
+  connection-timeout: 5000
 spring: 
   jackson:
     serialization:
